@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Hunters - Твоето Трейдинг Комюнити</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #2a2a4a;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 90%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00bcd4;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #a0a0a0;
+        }
+
+        .banner-container {
+            margin-bottom: 30px;
+        }
+
+        .banner-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .neon-banner {
+            box-shadow: 0 0 20px #ff00ff, 0 0 40px #00bfff, 0 0 60px #ff00ff;
+            border: 2px solid #ffffff10;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .neon-banner:hover {
+            transform: scale(1.02);
+        }
+
+        .neon-pulse {
+            animation: pulseGlow 3s infinite alternate;
+        }
+
+        @keyframes pulseGlow {
+            0% {
+                box-shadow: 0 0 10px #ff00ff, 0 0 20px #00bfff;
+            }
+            100% {
+                box-shadow: 0 0 30px #ff00ff, 0 0 60px #00bfff;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.2s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .slide-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 1s ease-out forwards;
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-delay-1 { animation-delay: 0.5s; }
+        .fade-in-delay-2 { animation-delay: 1s; }
+        .fade-in-delay-3 { animation-delay: 1.5s; }
+        .fade-in-delay-4 { animation-delay: 2s; }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #0097a7;
+            animation: wiggle 0.4s ease-in-out;
+        }
+
+        @keyframes wiggle {
+            0% { transform: rotate(-2deg); }
+            50% { transform: rotate(2deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-size: 1em;
+        }
+
+        .contact-links a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            color: #ff00ff;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .social-links a {
+                padding: 10px 20px;
+                font-size: 0.95em;
+                margin: 8px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner-container fade-in fade-in-delay-1">
+            <a href="https://linktr.ee/crypto_hunters_community" target="_blank">
+                <img src="banner.png" alt="Crypto Hunters Banner - Click to find out more" class="neon-banner neon-pulse">
+            </a>
+        </div>
+
+        <h1 class="fade-in fade-in-delay-2">Добре дошли в Crypto Hunters!</h1>
+
+        <p class="slide-up fade-in-delay-3">
+            Ние сме общност от ентусиасти, посветени на свободата, която ни предлага трейдинга.
+            Независимо дали сте начинаещ или опитен, тук ще намерите подкрепа, знания и възможности да растете заедно с нас.
+        </p>
+        <p class="slide-up fade-in-delay-4">
+            Присъединете се към нашите групи и станете част от едно силно и информирано общество!
+        </p>
+
+        <div class="social-links fade-in fade-in-delay-4">
+            <a href="https://discord.com/invite/26bpc5sN2e" target="_blank">Discord група</a>
+            <a href="https://t.me/crypto_fx_hunters" target="_blank">Telegram група</a>
+            <a href="https://www.youtube.com/@CryPto-HunTers" target="_blank">YouTube канал</a>
+            <a href="https://whop.com/crypto-hunters-academy" target="_blank">Crypto Hunters Академия</a>
+        </div>
+
+        <p class="footer fade-in fade-in-delay-4">Нека преследваме нови възможности заедно!</p>
+
+        <div class="contact-links fade-in fade-in-delay-4">
+            <a href="mailto:cryptofire112@gmail.com">@mail</a>
+            <a href="https://linktr.ee/crypto_hunters_community" target="_blank">Contacts</a>
+        </div>
+    </div>
+</body>
+</html>
