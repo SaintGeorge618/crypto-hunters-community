@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="bg">
 <head>
@@ -40,71 +39,29 @@
             margin-bottom: 20px;
         }
 
-        .footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #a0a0a0;
-        }
+        .footer { margin-top: 30px; font-size: 0.9em; color: #a0a0a0; }
 
-        .banner-container {
-            margin-bottom: 30px;
-        }
-
+        .banner-container { margin-bottom: 30px; }
         .banner-container img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            border-radius: 10px;
+            max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 10px;
         }
 
         .neon-banner {
             box-shadow: 0 0 20px #ff00ff, 0 0 40px #00bfff, 0 0 60px #ff00ff;
-            border: 2px solid #ffffff10;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
+            border: 2px solid #ffffff10; border-radius: 10px; transition: transform 0.3s ease;
         }
-
-        .neon-banner:hover {
-            transform: scale(1.02);
-        }
-
-        .neon-pulse {
-            animation: pulseGlow 3s infinite alternate;
-        }
-
+        .neon-banner:hover { transform: scale(1.02); }
+        .neon-pulse { animation: pulseGlow 3s infinite alternate; }
         @keyframes pulseGlow {
-            0% {
-                box-shadow: 0 0 10px #ff00ff, 0 0 20px #00bfff;
-            }
-            100% {
-                box-shadow: 0 0 30px #ff00ff, 0 0 60px #00bfff;
-            }
+            0% { box-shadow: 0 0 10px #ff00ff, 0 0 20px #00bfff; }
+            100% { box-shadow: 0 0 30px #ff00ff, 0 0 60px #00bfff; }
         }
 
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 1.2s ease-in forwards;
-        }
+        .fade-in { opacity: 0; animation: fadeIn 1.2s ease-in forwards; }
+        @keyframes fadeIn { to { opacity: 1; } }
 
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-
-        .slide-up {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: slideUp 1s ease-out forwards;
-        }
-
-        @keyframes slideUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+        .slide-up { opacity: 0; transform: translateY(20px); animation: slideUp 1s ease-out forwards; }
+        @keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
 
         .fade-in-delay-1 { animation-delay: 0.5s; }
         .fade-in-delay-2 { animation-delay: 1s; }
@@ -112,85 +69,49 @@
         .fade-in-delay-4 { animation-delay: 2s; }
 
         .social-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
+            display: flex; flex-wrap: wrap; justify-content: center; margin-top: 20px;
         }
-
         .social-links a {
-            display: inline-block;
-            background-color: #00bcd4;
-            color: #fff;
-            padding: 12px 25px;
-            margin: 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
+            display: inline-block; background-color: #00bcd4; color: #fff; padding: 12px 25px; margin: 10px;
+            border-radius: 5px; text-decoration: none; font-weight: bold; transition: background-color 0.3s ease;
         }
+        .social-links a:hover { background-color: #0097a7; animation: wiggle 0.4s ease-in-out; }
+        @keyframes wiggle { 0% { transform: rotate(-2deg);} 50% { transform: rotate(2deg);} 100% { transform: rotate(0);} }
 
-        .social-links a:hover {
-            background-color: #0097a7;
-            animation: wiggle 0.4s ease-in-out;
-        }
-
-        @keyframes wiggle {
-            0% { transform: rotate(-2deg); }
-            50% { transform: rotate(2deg); }
-            100% { transform: rotate(0deg); }
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            font-size: 1em;
-        }
-
+        .contact-links { display: flex; justify-content: space-between; margin-top: 20px; font-size: 1em; }
         .contact-links a {
-            color: #00bcd4;
+            color: #00bcd4; text-decoration: none; font-weight: bold; padding: 10px 20px; transition: color 0.3s ease;
+        }
+        .contact-links a:hover { color: #ff00ff; }
+
+        /* Долу: само „Индикатори“, със същия стил като mail/contacts */
+        .shortcuts {
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+        }
+        .shortcuts a {
+            color: #00bcd4;     /* същият цвят */
             text-decoration: none;
             font-weight: bold;
-            padding: 10px 20px;
+            padding: 10px 20px; /* същият падинг */
             transition: color 0.3s ease;
         }
-
-        .contact-links a:hover {
-            color: #ff00ff;
-        }
+        .shortcuts a:hover { color: #ff00ff; } /* същият hover */
 
         @media (max-width: 600px) {
-            h1 {
-                font-size: 1.8em;
-            }
-
-            p {
-                font-size: 1em;
-            }
-
-            .social-links a {
-                padding: 10px 20px;
-                font-size: 0.95em;
-                margin: 8px;
-            }
-
-            .container {
-                padding: 20px;
-            }
-
-            .contact-links {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
+            h1 { font-size: 1.8em; }
+            p { font-size: 1em; }
+            .social-links a { padding: 10px 20px; font-size: 0.95em; margin: 8px; }
+            .container { padding: 20px; }
+            .contact-links { flex-direction: column; align-items: center; gap: 10px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="banner-container fade-in fade-in-delay-1">
-            <a href="https://linktr.ee/crypto_hunters_community" target="_blank">
+            <a href="https://linktr.ee/crypto_hunters_community" target="_blank" rel="noopener">
                 <img src="banner.png" alt="Crypto Hunters Banner - Click to find out more" class="neon-banner neon-pulse">
             </a>
         </div>
@@ -206,17 +127,22 @@
         </p>
 
         <div class="social-links fade-in fade-in-delay-4">
-            <a href="https://discord.com/invite/26bpc5sN2e" target="_blank">Discord група</a>
-            <a href="https://t.me/crypto_fx_hunters" target="_blank">Telegram група</a>
-            <a href="https://www.youtube.com/@CryPto-HunTers" target="_blank">YouTube канал</a>
-            <a href="https://whop.com/crypto-hunters-academy" target="_blank">Crypto Hunters Академия</a>
+            <a href="https://discord.com/invite/26bpc5sN2e" target="_blank" rel="noopener">Discord група</a>
+            <a href="https://t.me/crypto_fx_hunters" target="_blank" rel="noopener">Telegram група</a>
+            <a href="https://www.youtube.com/@CryPto-HunTers" target="_blank" rel="noopener">YouTube канал</a>
+            <a href="https://whop.com/crypto-hunters-academy" target="_blank" rel="noopener">Crypto Hunters Академия</a>
         </div>
 
         <p class="footer fade-in fade-in-delay-4">Нека преследваме нови възможности заедно!</p>
 
         <div class="contact-links fade-in fade-in-delay-4">
-            <a href="mailto:cryptofire112@gmail.com">@mail</a>
-            <a href="https://linktr.ee/crypto_hunters_community" target="_blank">Contacts</a>
+            <a href="mailto:cryptofire112@gmail.com">@Поща</a>
+            <a href="https://linktr.ee/crypto_hunters_community" target="_blank" rel="noopener">Контакти</a>
+        </div>
+
+        <!-- Долу: само „Индикатори“ към външния сайт -->
+        <div class="shortcuts fade-in fade-in-delay-4">
+            <a href="https://crypto-hunters-indicators.netlify.app/" target="_blank" rel="noopener">TradingView - Индикатори</a>
         </div>
     </div>
 </body>
