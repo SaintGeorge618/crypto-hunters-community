@@ -116,9 +116,11 @@
 
         .contact-links {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 12px;
             margin-top: 20px;
             font-size: 1em;
+            flex-wrap: wrap;
         }
         .contact-links a {
             color: #00bcd4;
@@ -129,7 +131,7 @@
         }
         .contact-links a:hover { color: #ff00ff; }
 
-        /* Долни линкове */
+        /* Долни линкове (запазено) */
         .shortcuts {
             margin-top: 16px;
             display: flex;
@@ -146,7 +148,7 @@
         }
         .shortcuts a:hover { color: #ff00ff; }
 
-        /* ПУЛСИРАЩА ИГРА */
+        /* ПУЛСИРАЩА ИГРА / БОТ */
         .game-link {
             font-size: 1.15em;
             letter-spacing: 1px;
@@ -214,19 +216,12 @@
 
         <div class="contact-links fade-in fade-in-delay-4">
             <a href="mailto:cryptofire112@gmail.com">@Поща</a>
+            <a href="https://crypto-hunters-bot.netlify.app/" target="_blank" rel="noopener" class="game-link">БОТ</a>
+            <a href="https://crypto-hunters-indicators.netlify.app/" target="_blank" rel="noopener">Индикатори</a>
+            <a href="https://crypto-hunters-game.netlify.app/" target="_blank" rel="noopener" class="game-link">ИГРА</a>
             <a href="https://linktr.ee/crypto_hunters_community" target="_blank" rel="noopener">Контакти</a>
-        </div>
-
-        <!-- ИГРА над Индикатори -->
-        <div class="shortcuts fade-in fade-in-delay-4">
-            <a href="https://crypto-hunters-game.netlify.app/" target="_blank" rel="noopener" class="game-link">
-                ИГРА
-            </a>
-            <a href="https://crypto-hunters-indicators.netlify.app/" target="_blank" rel="noopener">
-                Индикатори
-            </a>
         </div>
 
     </div>
 </body>
-</html>
+</html>            
